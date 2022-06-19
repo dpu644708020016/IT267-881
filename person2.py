@@ -11,16 +11,21 @@ class Person:
     def show(self):
         print(f'Name:{self.name } Sex: {self.sex} Profession: {self.profession} Study: {self.study}')
 
-#person1
-Jassa = Person('Jassa','Female','Softwere Enhiner',0)
-Jassa.work()
-Jassa.show()
-#person2
-Jon = Person('Jon','male','Doctor',15)
-Jon.work()
-Jon.show()
-#person3
-Lisa = Person('Lisa','Female','Singer',10)
-Lisa.work()
+    def __del__(self):
+        print("object was destroyed")
 
-Lisa.show()
+if __name__ == '__main__':
+    #person1
+    Jassa = Person('Jassa','Female','Softwere Enhiner',0)
+    Jassa.work()
+    Jassa.show()
+    #person2
+    Jon = Person('Jon','male','Doctor',15)
+    Jon.work()
+    Jon.show()
+    #person3
+    Lisa = Person('Lisa','Female','Singer',10)
+    Lisa.work()
+    Lisa.show()
+
+
