@@ -1,7 +1,3 @@
-from calendar import c
-from re import T
-
-
 class Car:
     brand = "TOYOTA"
 
