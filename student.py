@@ -1,7 +1,7 @@
 class Student:
     student = "Student"
 
-    def __init__(self,id:str,name:str,major:str) ->None:
+    def __init__(self,id:str,name:str,major="IT") ->None:
         self.id = id
         self.name = name
         self.major = major
@@ -21,3 +21,6 @@ if __name__ == "__main__":
 
     John = Student(222,"John","MKT")
     John.DisplayDetail()
+
+    James = Student(113,"James")
+    James.DisplayDetail()
