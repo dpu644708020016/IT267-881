@@ -1,13 +1,13 @@
 class CoffeeOrder:
-    menu_type = "Coffee"
     total = 0
-
+    menu_type = "Coffee"
     def __init__(self,customer_name:str,menu:str,num = 1,size = 'R') -> None:
         self.customer_name = customer_name
         self.menu = menu.upper()
         self.num = num
         self.size = size.upper()
         self.price = 0
+
 
     def check_menu(self):
         menu_dictionary = {
@@ -29,9 +29,9 @@ class CoffeeOrder:
             self.price += 1.5
         else:
             self.price
-        
+
         CoffeeOrder.total = self.price * self.num
-        
+
     def display_detail(self):
         self.check_menu()
         self.compute_price()
