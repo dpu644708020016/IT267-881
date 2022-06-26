@@ -11,7 +11,7 @@ class EmpMKT(Employee):
         self.location = location
 
     def add_commission(self,commission:int):
-        self.commission = com
+        self.commission = commission
 
     def add_emp_detail(self):
         super().emp_detail()
@@ -19,4 +19,4 @@ class EmpMKT(Employee):
         print(f'commission: {self.commission}%')
 
     def mkt_salary(self):
-        self.emp_salary()
+        self._emp_salary()
