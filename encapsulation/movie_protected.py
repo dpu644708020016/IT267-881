@@ -4,13 +4,13 @@ class Movie:
         self._title = None
         self._year = None
         self._genre = None
-    
+
     #เมธอด protected ขึ้นต้นด้วย underscore 1 ครั้ง
     def _add_movie(self,title:str,year:int,genre:str):
         self._title = title
         self._year = year
         self._genre = genre
-    
+
     def _getmovie_detail(self):
         print(f'Title: {self._title}')
         print(f'Year: {self._year}')
@@ -20,10 +20,10 @@ class Movie:
 class Documentary(Movie):
     def __init__(self) -> None:
         Movie.__init__(self) #super().__init__()
-    
+
     def add_channel(self,ch:str):
         self.channel = ch
-    
+
     def _getmovie_detail(self):
         #super()._getmovie_detail()
         Movie._getmovie_detail(self)

@@ -5,7 +5,7 @@ class Movie:
         self.__year = None
         self.__genre = None
         self.__rating = 5
-    
+
     #เมธอด protected ขึ้นต้นด้วย underscore 1 ครั้ง
     def _add_movie(self,title:str,year:int,genre:str,rating=5):
         self.__title = title
