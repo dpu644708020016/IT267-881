@@ -1,4 +1,3 @@
-from this import s
 from shape import Shape
 from math import pi
 #abstect class การกำหนดโครงสร้าง

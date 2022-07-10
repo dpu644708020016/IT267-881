@@ -4,10 +4,10 @@ class Vehicle:
         self.wheels = wheels
         self._maxspeed = max
         self.__vin = vin
-    
+
     def set_vin(self,vin):
         self.__vin = vin
-    
+
     def v_detail(self):
         print("==============")
         print(f'name: {self.name}')

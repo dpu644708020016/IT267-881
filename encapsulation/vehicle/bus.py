@@ -7,13 +7,12 @@ class Bus(Vehicle):
 
     def set_color(self,color):
         self.color = color
-    
+
     def set_capacity(self,capacity):
         self.capacity = capacity
-    
+
     def v_detail(self):
         Vehicle.v_detail(self)
         print(f'color: {self.color}')
         print(f'capacity: {self.capacity}')
 
-    

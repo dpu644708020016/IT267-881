@@ -1,7 +1,3 @@
-import re
-from tkinter import N
-
-
 class Shape:
     def __init__(self)-> None:
         self.__shape = None
